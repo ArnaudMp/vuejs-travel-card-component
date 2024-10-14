@@ -68,13 +68,17 @@ function _expandFromEnv(value) {
   });
 }
 
+const defineAppConfig = (config) => config;
+
+const appConfig0 = defineAppConfig({
+  title: "Mon site NUXT"
+});
+
 const inlineAppConfig = {
   "nuxt": {}
 };
 
-
-
-const appConfig = defuFn(inlineAppConfig);
+const appConfig = defuFn(appConfig0, inlineAppConfig);
 
 const _inlineRuntimeConfig = {
   "app": {
@@ -88,6 +92,9 @@ const _inlineRuntimeConfig = {
     "routeRules": {
       "/__nuxt_error": {
         "cache": false
+      },
+      "/blog": {
+        "ssr": false
       },
       "/_nuxt/builds/meta/**": {
         "headers": {
