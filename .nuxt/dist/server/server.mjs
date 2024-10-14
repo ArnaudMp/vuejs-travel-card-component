@@ -1,0 +1,1 @@
+export { default } from "file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
