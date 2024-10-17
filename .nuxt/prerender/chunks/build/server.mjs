@@ -864,7 +864,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-CN5HtT2b.mjs')
+    component: () => import('./index-BYQGZJy4.mjs')
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1650,7 +1650,7 @@ const plugin = /* @__PURE__ */ defineNuxtPlugin({
     };
   }
 });
-const LazyHomeCards = defineAsyncComponent(() => import('./HomeCards-B7YTyjEt.mjs').then((r) => r["default"] || r.default || r));
+const LazyHomeCards = defineAsyncComponent(() => import('./HomeCards-DlWqSCqy.mjs').then((r) => r["default"] || r.default || r));
 const LazyIcon = defineAsyncComponent(() => import('./Icon-DfwXLsqh.mjs').then((r) => r["default"] || r.default || r));
 const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-DAGKEdSo.mjs').then((r) => r["default"] || r.default || r));
 const lazyGlobalComponents = [

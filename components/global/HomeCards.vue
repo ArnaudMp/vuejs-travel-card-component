@@ -14,7 +14,6 @@
       autoplay: true
     }"
     :navigation="false"
-    :modules="modules"
     class="mySwiper rounded-3xl"
   >
     <template #container-start />

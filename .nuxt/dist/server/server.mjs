@@ -803,7 +803,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-CN5HtT2b.js")
+    component: () => import("./_nuxt/index-BYQGZJy4.js")
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1950,7 +1950,7 @@ const plugin = /* @__PURE__ */ defineNuxtPlugin({
     };
   }
 });
-const LazyHomeCards = defineAsyncComponent(() => import("./_nuxt/HomeCards-B7YTyjEt.js").then((r) => r["default"] || r.default || r));
+const LazyHomeCards = defineAsyncComponent(() => import("./_nuxt/HomeCards-DlWqSCqy.js").then((r) => r["default"] || r.default || r));
 const LazyIcon = defineAsyncComponent(() => import("./_nuxt/Icon-DfwXLsqh.js").then((r) => r["default"] || r.default || r));
 const LazyIconCSS = defineAsyncComponent(() => import("./_nuxt/IconCSS-DAGKEdSo.js").then((r) => r["default"] || r.default || r));
 const lazyGlobalComponents = [

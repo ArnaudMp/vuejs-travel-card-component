@@ -45,7 +45,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxtjs/i18n",
     "@dargmuesli/nuxt-cookie-control",
-    "nuxt-rating"
+    "nuxt-rating",
   ],
 
   tailwindcss: {
