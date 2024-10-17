@@ -1,3 +1,5 @@
+# GC Tech Test
+
 ## Quick setup (TLDR;)
 
 ```bash
