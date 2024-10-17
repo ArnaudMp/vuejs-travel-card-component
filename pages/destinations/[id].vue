@@ -63,7 +63,7 @@
           disableOnInteraction: false,
         }" :pagination="{
           clickable: true,
-        }" :navigation="true" :modules="modules" class="mySwiper rounder-3xl bg-transparent">
+        }" :navigation="true" class="mySwiper rounder-3xl bg-transparent">
           <swiper-slide><img src="assets/img/1.jpg" class="rounded-3xl bg-transparent"></swiper-slide>
           <swiper-slide><img src="assets/img/2.jpg" class="rounded-3xl bg-transparent"></swiper-slide><swiper-slide><img
               src="assets/img/3.jpg" class="rounded-3xl bg-transparent"></swiper-slide>
