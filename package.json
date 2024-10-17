@@ -43,6 +43,8 @@
     "typescript": "5.5.2"
   },
   "dependencies": {
+    "@vercel/kv": "^3.0.0",
+    "nuxt-rating": "^0.1.5",
     "swiper": "^11.1.14"
   }
 }

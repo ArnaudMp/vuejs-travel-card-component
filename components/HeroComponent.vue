@@ -1,8 +1,8 @@
 <template>
   <div
-    class="h-full w-screen bg-[url('assets/img/background.jpg')] bg-cover pb-60 pt-60"
+    class="h-screen w-screen bg-[url('assets/img/background.jpg')] bg-cover -mt-40 pb-60 pt-60"
   >
-    <div class="container mx-auto max-h-screen max-w-screen-xl px-8">
+    <div class="container mx-auto max-h-screen max-w-screen-xl pt-30 px-8">
         <section class="w-full">
           <div class="flex justify-start">
             <h1 class="font-sans text-5xl sm:text-7xl font-thin text-white pr-2">My</h1>

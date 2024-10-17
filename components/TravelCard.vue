@@ -3,7 +3,7 @@
     class="travel-card overflow-hidden rounded-3xl bg-cover"
     :style="{ backgroundImage: `url(img/${post.id}.jpg)` }"
   >
-    <div class="bg-gradient-to-t from-black/20 to-black/40 p-5 sm:p-20 text-left">
+    <div class="transition-colors ease-in-out duration-300 bg-black/40 hover:bg-black/20 p-5 sm:p-20 text-left">
       <div class="title" data-swiper-parallax="-300">
         <p class="text-4xl font-bold">{{ post.title.slice(0, 25) }}</p>
         <!-- <p class="text-4xl font-bold">{{ image.url }}</p> -->

@@ -21,6 +21,12 @@ export default defineNuxtConfig({
       routes: ["/", "/about"],
       ignore: ["/destinations", "/destinations/*"],
     },
+
+    storage: {
+      data: {
+        driver: 'vercelKV'
+      }
+    }
   },
 
   routeRules: {
@@ -39,6 +45,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxtjs/i18n",
     "@dargmuesli/nuxt-cookie-control",
+    "nuxt-rating"
   ],
 
   tailwindcss: {

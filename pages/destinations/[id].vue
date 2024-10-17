@@ -6,12 +6,12 @@
           <p class="text-4xl font-bold">{{ post.title }}</p>
           <!-- <p class="text-4xl font-bold">{{ image.url }}</p> -->
         </div>
-        <div class="subtitle pt-10" data-swiper-parallax="-200">
+        <div class="subtitle pt-10">
           <p class="text-2xl font-light">
             {{ post.body.slice(0, 40) }}
           </p>
         </div>
-        <div class="text pt-10" data-swiper-parallax="-100">
+        <div class="text pt-10">
           <p class="text-lg">
             {{ post.body }}
             {{ post.body }}
@@ -19,20 +19,18 @@
         </div>
       </div>
     </div>
-    <div
-      class="flextravel-card mt-10 flex overflow-hidden rounded-3xl bg-cover"
-    >
+    <div class="flextravel-card mt-10 flex overflow-hidden rounded-3xl bg-cover">
       <div class="bg-gradient-to-t from-white/20 to-white/40 p-5 sm:p-20">
-        <div class="title" data-swiper-parallax="-300">
+        <div class="title">
           <p class="text-4xl font-bold">{{ post.title }}</p>
           <!-- <p class="text-4xl font-bold">{{ image.url }}</p> -->
         </div>
-        <div class="subtitle pt-10" data-swiper-parallax="-200">
+        <div class="subtitle pt-10">
           <p class="text-2xl font-light">
             {{ post.body.slice(0, 40) }}
           </p>
         </div>
-        <div class="text pt-10" data-swiper-parallax="-100">
+        <div class="text pt-10">
           <p class="text-lg">
             {{ post.body }}
             {{ post.body }}
@@ -40,16 +38,16 @@
         </div>
       </div>
       <div class="bg-gradient-to-t from-white/20 to-white/40 p-5 sm:p-20">
-        <div class="title" data-swiper-parallax="-300">
+        <div class="title">
           <p class="text-4xl font-bold">{{ post.title }}</p>
           <!-- <p class="text-4xl font-bold">{{ image.url }}</p> -->
         </div>
-        <div class="subtitle pt-10" data-swiper-parallax="-200">
+        <div class="subtitle pt-10">
           <p class="text-2xl font-light">
             {{ post.body.slice(0, 40) }}
           </p>
         </div>
-        <div class="text pt-10" data-swiper-parallax="-100">
+        <div class="text pt-10">
           <p class="text-lg">
             {{ post.body }}
             {{ post.body }}
@@ -60,28 +58,28 @@
     <div class="travel-card mt-10 overflow-hidden rounded-3xl">
       <div class="bg-gradient-to-t from-white/20 to-white/40 p-5 sm:p-20">
         <swiper
-          :space-between="30"
-          :centered-slides="true"
-          :autoplay="{
-            delay: 2500,
-            disableOnInteraction: false,
-          }"
-          :pagination="{
-            clickable: true,
-          }"
-          :navigation="true"
-          :modules="modules"
-          class="mySwiper rounder-3xl bg-transparent"
-        >
-          <swiper-slide
-            ><img src="assets/img/1.jpg" class="rounded-3xl bg-transparent"
-          ></swiper-slide>
-          <swiper-slide
-            ><img src="assets/img/2.jpg" class="rounded-3xl bg-transparent" ></swiper-slide
-          ><swiper-slide
-            ><img src="assets/img/3.jpg" class="rounded-3xl bg-transparent"
-          ></swiper-slide>
+:space-between="30" :centered-slides="true" :autoplay="{
+          delay: 2500,
+          disableOnInteraction: false,
+        }" :pagination="{
+          clickable: true,
+        }" :navigation="true" :modules="modules" class="mySwiper rounder-3xl bg-transparent">
+          <swiper-slide><img src="assets/img/1.jpg" class="rounded-3xl bg-transparent"></swiper-slide>
+          <swiper-slide><img src="assets/img/2.jpg" class="rounded-3xl bg-transparent"></swiper-slide><swiper-slide><img
+              src="assets/img/3.jpg" class="rounded-3xl bg-transparent"></swiper-slide>
         </swiper>
+      </div>
+      <div class="grid grid-cols-3 gap-5">
+        <div class="flextravel-card mt-10 flex overflow-hidden rounded-3xl bg-cover">
+          <RateComponent />
+        </div>
+
+        <div class="flextravel-card mt-10 flex overflow-hidden rounded-3xl bg-cover">
+          <RateComponent />
+        </div>
+        <div class="flextravel-card mt-10 flex overflow-hidden rounded-3xl bg-cover">
+          <RateComponent />
+        </div>
       </div>
     </div>
   </div>
