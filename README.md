@@ -1,80 +1,21 @@
-# Nuxt Boilerplate
-
-A ready to use Nuxt 3 boilerplate
-
-**Live Demo**: https://nuxt-boilerplate-main.vercel.app/
-
-**StackBlitz**: https://stackblitz.com/github/renegadevi/nuxt-boilerplate
-
-![screenshot](https://raw.githubusercontent.com/renegadevi/nuxt-boilerplate/main/.github/screenshot.png)
-![lighthouse](https://github.com/renegadevi/nuxt-boilerplate/blob/e806bae6efec29a19579d7cf76ef683ffe980917/.github/lighthouse.png)
-
 ## Quick setup (TLDR;)
 
 ```bash
-git clone https://github.com/renegadevi/nuxt-boilerplate.git
-cd nuxt-boilerplate
-pnpm install
-pnpm run dev
+bun install
+bun run dev
 ```
 
 ## Setup
 
-### Prerequisites:
-
-- [pnpm](https://pnpm.io/)
-- [mkcert](https://github.com/FiloSottile/mkcert) (Optional localhost HTTPS)
-
-### Clone repo
+### Install dependencies
 
 ```bash
-git clone https://github.com/renegadevi/nuxt-boilerplate.git
-cd nuxt-boilerplate
-```
-
-### Install dependencies:
-
-```bash
-pnpm install
-```
-
-### Optional: `.env`
-
-```ini
-VITE_BASE_URL="https://localhost:3000/"
-```
-
-### Optional: Generate certificate for HTTPS for localhost
-
-```bash
-# mkdir certs
-cd certs
-mkcert localhost
+bun install
 ```
 
 ## Start local server
 
-### Start development server
-
-```bash
-# HTTP
-pnpm run dev
-# HTTPS
-pnpm run dev-https
-```
-
-### Start production build server (HTTP)
-
-```bash
-# HTTP
-pnpm run build;pnpm run preview
-# HTTPS
-pnpm run build;pnpm run preview-https
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-## Nuxt Modules included:
+## Nuxt Modules included
 
 - [eslint](https://nuxt.com/modules/eslint)
 - [pinia](https://nuxt.com/modules/pinia)
