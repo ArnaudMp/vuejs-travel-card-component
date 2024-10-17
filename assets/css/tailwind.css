@@ -1,0 +1,31 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "home-cards.css";
+@import "travel-card-slider.css";
+
+@layer base {
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+html {
+  @apply bg-slate-100;
+}
+html.dark {
+  @apply bg-slate-900;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

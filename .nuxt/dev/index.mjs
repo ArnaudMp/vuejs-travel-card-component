@@ -3,11 +3,10 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, createError, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, getQuery as getQuery$1, readBody, getResponseStatusText } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/h3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, createError, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, getQuery as getQuery$1, readBody, getResponseStatusText } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/h3/dist/index.mjs';
 import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import { stringify, uneval } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/devalue/index.js';
 import destr from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/destr/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, joinRelativeURL } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/ufo/dist/index.mjs';
 import { renderToString } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/vue/server-renderer/index.mjs';
 import { propsToString, renderSSRHead } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/@unhead/ssr/dist/index.mjs';
 import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/ofetch/dist/node.mjs';
@@ -25,6 +24,9 @@ import { consola } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-trave
 import { getContext } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unctx/dist/index.mjs';
 import { captureRawStackTrace, parseRawStackTrace } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/errx/dist/index.js';
 import { isVNode, version, unref } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/vue/index.mjs';
+import { fileURLToPath } from 'node:url';
+import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/ipx/dist/index.mjs';
+import { isAbsolute } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/pathe/dist/index.mjs';
 import { createServerHead as createServerHead$1, CapoPlugin } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unhead/dist/index.mjs';
 import { defineHeadPlugin } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/@unhead/shared/dist/index.mjs';
 
@@ -71,7 +73,7 @@ function _expandFromEnv(value) {
 const defineAppConfig = (config) => config;
 
 const appConfig0 = defineAppConfig({
-  title: "Mon site NUXT"
+  title: "My Travel App"
 });
 
 const inlineAppConfig = {
@@ -93,7 +95,10 @@ const _inlineRuntimeConfig = {
       "/__nuxt_error": {
         "cache": false
       },
-      "/blog": {
+      "/destinations": {
+        "ssr": false
+      },
+      "/destinations/*": {
         "ssr": false
       },
       "/_nuxt/builds/meta/**": {
@@ -108,7 +113,183 @@ const _inlineRuntimeConfig = {
       }
     }
   },
-  "public": {}
+  "public": {
+    "device": {
+      "defaultUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.39 Safari/537.36",
+      "enabled": true,
+      "refreshOnResize": false
+    },
+    "i18n": {
+      "baseUrl": "",
+      "defaultLocale": "",
+      "defaultDirection": "ltr",
+      "strategy": "prefix_except_default",
+      "lazy": false,
+      "rootRedirect": "",
+      "routesNameSeparator": "___",
+      "defaultLocaleRouteNameSuffix": "default",
+      "skipSettingLocaleOnNavigate": false,
+      "differentDomains": false,
+      "trailingSlash": false,
+      "configLocales": [],
+      "locales": {},
+      "detectBrowserLanguage": {
+        "alwaysRedirect": true,
+        "cookieCrossOrigin": false,
+        "cookieDomain": "",
+        "cookieKey": "i18n_redirected",
+        "cookieSecure": false,
+        "fallbackLocale": "en-US",
+        "redirectOn": "root",
+        "useCookie": false
+      },
+      "experimental": {
+        "localeDetector": "",
+        "switchLocalePathLinkSSR": false,
+        "autoImportTranslationFunctions": false
+      }
+    },
+    "cookieControl": {
+      "barPosition": "bottom-full",
+      "closeModalOnClickOutside": true,
+      "colors": {
+        "barBackground": "#000",
+        "barButtonBackground": "#fff",
+        "barButtonColor": "#000",
+        "barButtonHoverBackground": "#333",
+        "barButtonHoverColor": "#fff",
+        "barTextColor": "#fff",
+        "checkboxActiveBackground": "#000",
+        "checkboxActiveCircleBackground": "#fff",
+        "checkboxDisabledBackground": "#ddd",
+        "checkboxDisabledCircleBackground": "#fff",
+        "checkboxInactiveBackground": "#000",
+        "checkboxInactiveCircleBackground": "#fff",
+        "controlButtonBackground": "#fff",
+        "controlButtonHoverBackground": "#000",
+        "controlButtonIconColor": "#000",
+        "controlButtonIconHoverColor": "#fff",
+        "focusRingColor": "#808080",
+        "modalBackground": "#fff",
+        "modalButtonBackground": "#000",
+        "modalButtonColor": "#fff",
+        "modalButtonHoverBackground": "#333",
+        "modalButtonHoverColor": "#fff",
+        "modalOverlay": "#000",
+        "modalOverlayOpacity": 0.8,
+        "modalTextColor": "#000",
+        "modalUnsavedColor": "#fff"
+      },
+      "cookies": {
+        "necessary": [
+          {
+            "name": {
+              "fr": "Cookies strictement nécessaires",
+              "en": "Strictly necessary cookies",
+              "ar": "ملفات تعريف الارتباط الضرورية"
+            },
+            "description": {
+              "fr": "Ces cookies sont indispensables au bon fonctionnement de mon site internet. Sans ces cookies, le site Web ne fonctionnerait pas correctement",
+              "en": "These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly",
+              "ar": "هذه ملفات ضرورية للعمل الصحيح لموقع الويب. بدون هذه الملفات، لن يعمل الموقع بشكل صحيح"
+            },
+            "targetCookieIds": [
+              "ncc_"
+            ],
+            "id": ""
+          }
+        ],
+        "optional": []
+      },
+      "cookieExpiryOffsetMs": 31536000000,
+      "cookieNameIsConsentGiven": "ncc_c",
+      "cookieNameCookiesEnabledIds": "ncc_e",
+      "cookieOptions": {
+        "path": "/",
+        "sameSite": "strict",
+        "secure": ""
+      },
+      "isAcceptNecessaryButtonEnabled": true,
+      "isControlButtonEnabled": true,
+      "isCookieIdVisible": true,
+      "isCssEnabled": false,
+      "isCssPonyfillEnabled": false,
+      "isDashInDescriptionEnabled": false,
+      "isIframeBlocked": false,
+      "isModalForced": false,
+      "locales": [
+        "en",
+        "fr",
+        "ar",
+        "en"
+      ],
+      "localeTexts": {
+        "en": {
+          "accept": "Accept",
+          "acceptAll": "Accept all",
+          "bannerDescription": "We use our own cookies and third-party cookies so that we can display this website correctly and better understand how this website is used, with a view to improving the services we offer. A decision on cookie usage permissions can be changed anytime using the cookie button that will appear after a selection has been made on this banner.",
+          "bannerTitle": "Cookies",
+          "close": "Close",
+          "cookiesFunctional": "Functional cookies",
+          "cookiesNecessary": "Necessary cookies",
+          "cookiesOptional": "Optional cookies",
+          "decline": "Decline",
+          "declineAll": "Decline all",
+          "here": "here",
+          "iframeBlocked": "To see this, please enable functional cookies",
+          "manageCookies": "Learn more and customize",
+          "save": "Save",
+          "settingsUnsaved": "You have unsaved settings"
+        },
+        "fr": {
+          "accept": "Accepter",
+          "acceptAll": "Tout accepter",
+          "bannerDescription": "Nous utilisons des cookies d’origine et des cookies tiers. Ces cookies sont destinés à vous offrir une navigation optimisée sur ce site web et de nous donner un aperçu de son utilisation, en vue de l’amélioration des services que nous offrons. En poursuivant votre navigation, nous considérons que vous acceptez l’usage des cookies.",
+          "bannerTitle": "Cookies",
+          "close": "Fermer",
+          "cookiesFunctional": "Cookies fonctionnels",
+          "cookiesNecessary": "Les cookies obligatoires",
+          "cookiesOptional": "Les cookies optionnels",
+          "decline": "J'accepte le nécessaire",
+          "declineAll": "Tout refuser",
+          "here": "ici",
+          "iframeBlocked": "Pour voir cela, veuillez activer les cookies fonctionnels",
+          "manageCookies": "Gérer les cookies",
+          "save": "Sauvegarder",
+          "settingsUnsaved": "Vous avez des paramètres non sauvegardés"
+        },
+        "ar": {
+          "accept": "قبول",
+          "acceptAll": "قبول الكل",
+          "bannerDescription": "نحن نستخدم ملفات تعريف الارتباط الخاصة بنا وملفات تعريف الارتباط الخاصة بالجهات الخارجية حتى نتمكن من عرض هذا الموقع وفهم كيفية استخدامه بشكل أفضل ، بهدف تحسين الخدمات التي نقدمها. إذا واصلت التصفح ، فإننا نعتبر أنك قبلت ملفات تعريف الارتباط.",
+          "bannerTitle": "ملفات تعريف الارتباط",
+          "close": "إغلاق",
+          "cookiesFunctional": "ملفات تعريف الارتباط الوظيفية",
+          "cookiesNecessary": "ملفات تعريف الارتباط الضرورية",
+          "cookiesOptional": "ملفات تعريف الارتباط الاختيارية",
+          "decline": "تقبل الضرورة",
+          "declineAll": "حذف الكل",
+          "here": "هنا",
+          "iframeBlocked": "لرؤية هذا ، يرجى تمكين ملفات تعريف الارتباط الوظيفية",
+          "manageCookies": "إدارة ملفات تعريف الارتباط",
+          "save": "حفظ",
+          "settingsUnsaved": "لديك إعدادات غير محفوظة"
+        }
+      }
+    }
+  },
+  "ipx": {
+    "baseURL": "/_ipx",
+    "alias": {},
+    "fs": {
+      "dir": [
+        "/Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/public"
+      ]
+    },
+    "http": {
+      "domains": []
+    }
+  }
 };
 const envOptions = {
   prefix: "NITRO_",
@@ -153,6 +334,244 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
     return void 0;
   }
 });
+
+const HASH_RE = /#/g;
+const AMPERSAND_RE = /&/g;
+const SLASH_RE = /\//g;
+const EQUAL_RE = /=/g;
+const PLUS_RE = /\+/g;
+const ENC_CARET_RE = /%5e/gi;
+const ENC_BACKTICK_RE = /%60/gi;
+const ENC_PIPE_RE = /%7c/gi;
+const ENC_SPACE_RE = /%20/gi;
+function encode(text) {
+  return encodeURI("" + text).replace(ENC_PIPE_RE, "|");
+}
+function encodeQueryValue(input) {
+  return encode(typeof input === "string" ? input : JSON.stringify(input)).replace(PLUS_RE, "%2B").replace(ENC_SPACE_RE, "+").replace(HASH_RE, "%23").replace(AMPERSAND_RE, "%26").replace(ENC_BACKTICK_RE, "`").replace(ENC_CARET_RE, "^").replace(SLASH_RE, "%2F");
+}
+function encodeQueryKey(text) {
+  return encodeQueryValue(text).replace(EQUAL_RE, "%3D");
+}
+function decode(text = "") {
+  try {
+    return decodeURIComponent("" + text);
+  } catch {
+    return "" + text;
+  }
+}
+function decodeQueryKey(text) {
+  return decode(text.replace(PLUS_RE, " "));
+}
+function decodeQueryValue(text) {
+  return decode(text.replace(PLUS_RE, " "));
+}
+
+function parseQuery(parametersString = "") {
+  const object = {};
+  if (parametersString[0] === "?") {
+    parametersString = parametersString.slice(1);
+  }
+  for (const parameter of parametersString.split("&")) {
+    const s = parameter.match(/([^=]+)=?(.*)/) || [];
+    if (s.length < 2) {
+      continue;
+    }
+    const key = decodeQueryKey(s[1]);
+    if (key === "__proto__" || key === "constructor") {
+      continue;
+    }
+    const value = decodeQueryValue(s[2] || "");
+    if (object[key] === void 0) {
+      object[key] = value;
+    } else if (Array.isArray(object[key])) {
+      object[key].push(value);
+    } else {
+      object[key] = [object[key], value];
+    }
+  }
+  return object;
+}
+function encodeQueryItem(key, value) {
+  if (typeof value === "number" || typeof value === "boolean") {
+    value = String(value);
+  }
+  if (!value) {
+    return encodeQueryKey(key);
+  }
+  if (Array.isArray(value)) {
+    return value.map((_value) => `${encodeQueryKey(key)}=${encodeQueryValue(_value)}`).join("&");
+  }
+  return `${encodeQueryKey(key)}=${encodeQueryValue(value)}`;
+}
+function stringifyQuery(query) {
+  return Object.keys(query).filter((k) => query[k] !== void 0).map((k) => encodeQueryItem(k, query[k])).filter(Boolean).join("&");
+}
+
+const PROTOCOL_STRICT_REGEX = /^[\s\w\0+.-]{2,}:([/\\]{1,2})/;
+const PROTOCOL_REGEX = /^[\s\w\0+.-]{2,}:([/\\]{2})?/;
+const PROTOCOL_RELATIVE_REGEX = /^([/\\]\s*){2,}[^/\\]/;
+const JOIN_LEADING_SLASH_RE = /^\.?\//;
+function hasProtocol(inputString, opts = {}) {
+  if (typeof opts === "boolean") {
+    opts = { acceptRelative: opts };
+  }
+  if (opts.strict) {
+    return PROTOCOL_STRICT_REGEX.test(inputString);
+  }
+  return PROTOCOL_REGEX.test(inputString) || (opts.acceptRelative ? PROTOCOL_RELATIVE_REGEX.test(inputString) : false);
+}
+function hasTrailingSlash(input = "", respectQueryAndFragment) {
+  {
+    return input.endsWith("/");
+  }
+}
+function withoutTrailingSlash(input = "", respectQueryAndFragment) {
+  {
+    return (hasTrailingSlash(input) ? input.slice(0, -1) : input) || "/";
+  }
+}
+function withTrailingSlash(input = "", respectQueryAndFragment) {
+  {
+    return input.endsWith("/") ? input : input + "/";
+  }
+}
+function withoutBase(input, base) {
+  if (isEmptyURL(base)) {
+    return input;
+  }
+  const _base = withoutTrailingSlash(base);
+  if (!input.startsWith(_base)) {
+    return input;
+  }
+  const trimmed = input.slice(_base.length);
+  return trimmed[0] === "/" ? trimmed : "/" + trimmed;
+}
+function withQuery(input, query) {
+  const parsed = parseURL(input);
+  const mergedQuery = { ...parseQuery(parsed.search), ...query };
+  parsed.search = stringifyQuery(mergedQuery);
+  return stringifyParsedURL(parsed);
+}
+function getQuery(input) {
+  return parseQuery(parseURL(input).search);
+}
+function isEmptyURL(url) {
+  return !url || url === "/";
+}
+function isNonEmptyURL(url) {
+  return url && url !== "/";
+}
+function joinURL(base, ...input) {
+  let url = base || "";
+  for (const segment of input.filter((url2) => isNonEmptyURL(url2))) {
+    if (url) {
+      const _segment = segment.replace(JOIN_LEADING_SLASH_RE, "");
+      url = withTrailingSlash(url) + _segment;
+    } else {
+      url = segment;
+    }
+  }
+  return url;
+}
+function joinRelativeURL(..._input) {
+  const JOIN_SEGMENT_SPLIT_RE = /\/(?!\/)/;
+  const input = _input.filter(Boolean);
+  const segments = [];
+  let segmentsDepth = 0;
+  for (const i of input) {
+    if (!i || i === "/") {
+      continue;
+    }
+    for (const [sindex, s] of i.split(JOIN_SEGMENT_SPLIT_RE).entries()) {
+      if (!s || s === ".") {
+        continue;
+      }
+      if (s === "..") {
+        if (segments.length === 1 && hasProtocol(segments[0])) {
+          continue;
+        }
+        segments.pop();
+        segmentsDepth--;
+        continue;
+      }
+      if (sindex === 1 && segments[segments.length - 1]?.endsWith(":/")) {
+        segments[segments.length - 1] += "/" + s;
+        continue;
+      }
+      segments.push(s);
+      segmentsDepth++;
+    }
+  }
+  let url = segments.join("/");
+  if (segmentsDepth >= 0) {
+    if (input[0]?.startsWith("/") && !url.startsWith("/")) {
+      url = "/" + url;
+    } else if (input[0]?.startsWith("./") && !url.startsWith("./")) {
+      url = "./" + url;
+    }
+  } else {
+    url = "../".repeat(-1 * segmentsDepth) + url;
+  }
+  if (input[input.length - 1]?.endsWith("/") && !url.endsWith("/")) {
+    url += "/";
+  }
+  return url;
+}
+
+const protocolRelative = Symbol.for("ufo:protocolRelative");
+function parseURL(input = "", defaultProto) {
+  const _specialProtoMatch = input.match(
+    /^[\s\0]*(blob:|data:|javascript:|vbscript:)(.*)/i
+  );
+  if (_specialProtoMatch) {
+    const [, _proto, _pathname = ""] = _specialProtoMatch;
+    return {
+      protocol: _proto.toLowerCase(),
+      pathname: _pathname,
+      href: _proto + _pathname,
+      auth: "",
+      host: "",
+      search: "",
+      hash: ""
+    };
+  }
+  if (!hasProtocol(input, { acceptRelative: true })) {
+    return parsePath(input);
+  }
+  const [, protocol = "", auth, hostAndPath = ""] = input.replace(/\\/g, "/").match(/^[\s\0]*([\w+.-]{2,}:)?\/\/([^/@]+@)?(.*)/) || [];
+  let [, host = "", path = ""] = hostAndPath.match(/([^#/?]*)(.*)?/) || [];
+  if (protocol === "file:") {
+    path = path.replace(/\/(?=[A-Za-z]:)/, "");
+  }
+  const { pathname, search, hash } = parsePath(path);
+  return {
+    protocol: protocol.toLowerCase(),
+    auth: auth ? auth.slice(0, Math.max(0, auth.length - 1)) : "",
+    host,
+    pathname,
+    search,
+    hash,
+    [protocolRelative]: !protocol
+  };
+}
+function parsePath(input = "") {
+  const [pathname = "", search = "", hash = ""] = (input.match(/([^#?]*)(\?[^#]*)?(#.*)?/) || []).splice(1);
+  return {
+    pathname,
+    search,
+    hash
+  };
+}
+function stringifyParsedURL(parsed) {
+  const pathname = parsed.pathname || "";
+  const search = parsed.search ? (parsed.search.startsWith("?") ? "" : "?") + parsed.search : "";
+  const hash = parsed.hash || "";
+  const auth = parsed.auth ? parsed.auth + "@" : "";
+  const host = parsed.host || "";
+  const proto = parsed.protocol || parsed[protocolRelative] ? (parsed.protocol || "") + "//" : "";
+  return proto + auth + host + pathname + search + hash;
+}
 
 const serverAssets = [{"baseName":"server","dir":"/Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/server/assets"}];
 
@@ -609,7 +1028,7 @@ function getRouteRulesForPath(path) {
   return defu({}, ..._routeRulesMatcher.matchAll(path).reverse());
 }
 
-const script = `
+const script$1 = `
 if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
   Object.defineProperty(window, '__NUXT_DEVTOOLS_TIME_METRIC__', {
     value: {},
@@ -622,13 +1041,13 @@ window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 
 const _khOsHRCve5 = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
-    htmlContext.head.push(`<script>${script}<\/script>`);
+    htmlContext.head.push(`<script>${script$1}<\/script>`);
   });
 });
 
 const rootDir = "/Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[],"charset":"utf-8","viewport":"width=device-width, initial-scale=1"};
 
 const appRootTag = "div";
 
@@ -714,9 +1133,18 @@ function onConsoleLog(callback) {
   consola.wrapConsole();
 }
 
+const script = "\"use strict\";(()=>{const t=window,e=document.documentElement,c=[\"dark\",\"light\"],n=getStorageValue(\"localStorage\",\"nuxt-color-mode\")||\"system\";let i=n===\"system\"?u():n;const r=e.getAttribute(\"data-color-mode-forced\");r&&(i=r),l(i),t[\"__NUXT_COLOR_MODE__\"]={preference:n,value:i,getColorScheme:u,addColorScheme:l,removeColorScheme:d};function l(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.add(s):e.className+=\" \"+s,a&&e.setAttribute(\"data-\"+a,o)}function d(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.remove(s):e.className=e.className.replace(new RegExp(s,\"g\"),\"\"),a&&e.removeAttribute(\"data-\"+a)}function f(o){return t.matchMedia(\"(prefers-color-scheme\"+o+\")\")}function u(){if(t.matchMedia&&f(\"\").media!==\"not all\"){for(const o of c)if(f(\":\"+o).matches)return o}return\"light\"}})();function getStorageValue(t,e){switch(t){case\"localStorage\":return window.localStorage.getItem(e);case\"sessionStorage\":return window.sessionStorage.getItem(e);case\"cookie\":return getCookie(e);default:return null}}function getCookie(t){const c=(\"; \"+window.document.cookie).split(\"; \"+t+\"=\");if(c.length===2)return c.pop()?.split(\";\").shift()}";
+
+const _r8v1HTMZ8A = (function(nitro) {
+  nitro.hooks.hook("render:html", (htmlContext) => {
+    htmlContext.head.push(`<script>${script}<\/script>`);
+  });
+});
+
 const plugins = [
   _khOsHRCve5,
-_VC7ksYYZM1
+_VC7ksYYZM1,
+_r8v1HTMZ8A
 ];
 
 const scheduledTasks = false;
@@ -847,10 +1275,41 @@ const errorHandler = (async function errorhandler(error, event) {
   return send(event, html);
 });
 
+function buildAssetsDir() {
+  return useRuntimeConfig().app.buildAssetsDir;
+}
+function buildAssetsURL(...path) {
+  return joinRelativeURL(publicAssetsURL(), buildAssetsDir(), ...path);
+}
+function publicAssetsURL(...path) {
+  const app = useRuntimeConfig().app;
+  const publicBase = app.cdnURL || app.baseURL;
+  return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
+}
+
+const _CirCfj = lazyEventHandler(() => {
+  const opts = useRuntimeConfig().ipx || {};
+  const fsDir = opts?.fs?.dir ? (Array.isArray(opts.fs.dir) ? opts.fs.dir : [opts.fs.dir]).map((dir) => isAbsolute(dir) ? dir : fileURLToPath(new URL(dir, globalThis._importMeta_.url))) : void 0;
+  const fsStorage = opts.fs?.dir ? ipxFSStorage({ ...opts.fs, dir: fsDir }) : void 0;
+  const httpStorage = opts.http?.domains ? ipxHttpStorage({ ...opts.http }) : void 0;
+  if (!fsStorage && !httpStorage) {
+    throw new Error("IPX storage is not configured!");
+  }
+  const ipxOptions = {
+    ...opts,
+    storage: fsStorage || httpStorage,
+    httpStorage
+  };
+  const ipx = createIPX(ipxOptions);
+  const ipxHandler = createIPXH3Handler(ipx);
+  return useBase(opts.baseURL, ipxHandler);
+});
+
 const _lazy_4GmcnZ = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
   { route: '/__nuxt_error', handler: _lazy_4GmcnZ, lazy: true, middleware: false, method: undefined },
+  { route: '/_ipx/**', handler: _CirCfj, lazy: false, middleware: false, method: undefined },
   { route: '/**', handler: _lazy_4GmcnZ, lazy: true, middleware: false, method: undefined }
 ];
 
@@ -1108,18 +1567,6 @@ function createServerHead(options = {}) {
 const unheadPlugins = true ? [CapoPlugin({ track: true })] : [];
 
 const renderSSRHeadOptions = {"omitLineBreaks":false};
-
-function buildAssetsDir() {
-  return useRuntimeConfig().app.buildAssetsDir;
-}
-function buildAssetsURL(...path) {
-  return joinRelativeURL(publicAssetsURL(), buildAssetsDir(), ...path);
-}
-function publicAssetsURL(...path) {
-  const app = useRuntimeConfig().app;
-  const publicBase = app.cdnURL || app.baseURL;
-  return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
-}
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;

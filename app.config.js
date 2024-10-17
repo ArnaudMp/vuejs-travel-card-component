@@ -1,3 +1,3 @@
 export default defineAppConfig({
-    title: 'Mon site NUXT'
+    title: 'My Travel App'
 })

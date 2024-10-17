@@ -1,19 +1,27 @@
-<template>
-  <div>
-    <NuxtLoadingIndicator />
-    <NuxtRouteAnnouncer />
-    <Header />
-    <NuxtPage />
-  </div>
-</template>
-
-
-<script setup>
-const config = useAppConfig()
+<script setup lang="ts">
+const { locale, t } = useI18n();
+useHead({
+  htmlAttrs: {
+    lang: locale,
+    dir: computed(() => {
+      return t("locale.dir") as "ltr" | "rtl" | "auto";
+    }),
+  },
+  titleTemplate(title) {
+    return title ? `${title} - ${t("site.name")}` : `${t("site.name")}`;
+  },
+});
+const config = useAppConfig();
 useSeoMeta({
-  title: config.title
-})
+  title: config.title,
+});
 </script>
+<template>
+  <NuxtLoadingIndicator />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
+</template>
 
 <style>
 .page-enter-active,
