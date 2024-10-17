@@ -792,7 +792,7 @@ const _routes = [
   {
     name: "destinations-id",
     path: "/destinations/:id()",
-    component: () => import("./_nuxt/_id_-h-_g06XP.js")
+    component: () => import("./_nuxt/_id_-DcBlfJh9.js")
   },
   {
     name: "destinations",

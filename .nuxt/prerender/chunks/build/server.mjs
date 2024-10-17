@@ -853,7 +853,7 @@ const _routes = [
   {
     name: "destinations-id",
     path: "/destinations/:id()",
-    component: () => import('./_id_-h-_g06XP.mjs')
+    component: () => import('./_id_-DcBlfJh9.mjs')
   },
   {
     name: "destinations",
