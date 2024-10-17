@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gradient-to-t from-gray-400/20 to-gray-400/40 p-5 sm:p-20">
+    <div class="bg-white/90 p-5 sm:p-20">
         <div class="title">
             <p class="text-4xl font-bold">Lorem Ipum</p>
             <!-- <p class="text-4xl font-bold">{{ image.url }}</p> -->

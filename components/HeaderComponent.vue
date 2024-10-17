@@ -3,8 +3,11 @@
     <nav class="flex flex-row justify-start pb-5 pt-10">
       <NuxtLink to="/" aria-label="Home" class="min-w-fit">
         <nuxt-img
-class="h-6 sm:ml-3 lg:ml-0" src="logo/logo.svg" densities="x1 x2" alt="nuxt-logo"
-          style="height: 36px; width: 99px" />
+v-if="$route.fullPath === '/'" class="h-6 sm:ml-3 lg:ml-0 home-logo" src="logo/logo-white.svg"
+          densities="x1 x2" alt="nuxt-logo" style="height: 36px; width: 99px; color: red" />
+        <nuxt-img
+v-else class="h-6 sm:ml-3 lg:ml-0 home-logo" src="logo/logo.svg"
+          densities="x1 x2" alt="nuxt-logo" style="height: 36px; width: 99px; color: red" />
       </NuxtLink>
       <div
         class="flex flex-col space-x-3 space-y-4 pr-2 sm:flex-row sm:space-x-3 sm:space-y-0 sm:pr-10 rtl:space-x-reverse" />
@@ -44,8 +47,8 @@ v-else
     </nav>
   </header>
 </template>
-<style lang="postcss" >
+<style lang="postcss">
 ul .router-link-exact-active {
-  @apply border-green-500/20 bg-green-500/20 text-black hover:border-green-500/20 hover:bg-green-500/20;
+  @apply border-gray-500/30 bg-gray-500/30 text-white hover:border-gray-500/30 hover:bg-gray-500/30;
 }
 </style>

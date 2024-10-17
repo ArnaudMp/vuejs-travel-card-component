@@ -853,18 +853,18 @@ const _routes = [
   {
     name: "destinations-id",
     path: "/destinations/:id()",
-    component: () => import('./_id_-DcBlfJh9.mjs')
+    component: () => import('./_id_-DQVz3EqD.mjs')
   },
   {
     name: "destinations",
     path: "/destinations",
     meta: __nuxt_page_meta || {},
-    component: () => import('./index-BrSxNdY4.mjs')
+    component: () => import('./index-0K0OxoTf.mjs')
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-BYQGZJy4.mjs')
+    component: () => import('./index-CihmRkvv.mjs')
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1650,7 +1650,7 @@ const plugin = /* @__PURE__ */ defineNuxtPlugin({
     };
   }
 });
-const LazyHomeCards = defineAsyncComponent(() => import('./HomeCards-DlWqSCqy.mjs').then((r) => r["default"] || r.default || r));
+const LazyHomeCards = defineAsyncComponent(() => import('./HomeCards-BVSd9jw5.mjs').then((r) => r["default"] || r.default || r));
 const LazyIcon = defineAsyncComponent(() => import('./Icon-DfwXLsqh.mjs').then((r) => r["default"] || r.default || r));
 const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-DAGKEdSo.mjs').then((r) => r["default"] || r.default || r));
 const lazyGlobalComponents = [
@@ -8271,7 +8271,7 @@ const __nuxt_component_0 = defineComponent({
   }
 });
 const layouts = {
-  default: () => import('./default-BVi0zX9s.mjs'),
+  default: () => import('./default-DHLSEd2t.mjs'),
   fullscreen: () => import('./fullscreen-xCoGyYH1.mjs')
 };
 const LayoutLoader = defineComponent({
