@@ -1,8 +1,8 @@
 <template>
-  <div class="mb-10 mt-5 px-3 flex justify-start">
-    <ul class='overflow-auto'>
+  <div class="mb-10 mt-5 px-3">
+    <ul class='overflow'>
       <li>
-        <section class="pt-10 max-h-min min-w-14 max-w-5xl">
+        <section class="pt-10 max-h-min min-w-14">
           <HomeCards />
         </section>
       </li>

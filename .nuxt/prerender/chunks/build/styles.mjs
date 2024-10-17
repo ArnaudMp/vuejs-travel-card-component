@@ -1,11 +1,13 @@
 const interopDefault = r => r.default || r || [];
 const styles = {
-  "node_modules/nuxt/dist/app/entry.js": () => import('./entry-styles.C5ZHs2io.mjs').then(interopDefault),
+  "node_modules/nuxt/dist/app/entry.js": () => import('./entry-styles.DMiZfGs8.mjs').then(interopDefault),
+  "components/TravelCard.vue": () => import('./TravelCard-styles.Cm-54jYZ.mjs').then(interopDefault),
+  "components/TravelCard.vue?vue&type=style&index=0&lang.postcss": () => import('./TravelCard-styles.iAiHQzRT.mjs').then(interopDefault),
   "app.vue": () => import('./app-styles.QcSDWy-A.mjs').then(interopDefault),
-  "node_modules/nuxt-icon/dist/runtime/Icon.vue": () => import('./Icon-styles.D531_NA5.mjs').then(interopDefault),
   "app.vue?vue&type=style&index=0&lang.css": () => import('./app-styles.CTnEeLIP.mjs').then(interopDefault),
-  "node_modules/nuxt-icon/dist/runtime/Icon.vue?vue&type=style&index=0&scoped=e8d572f6&lang.css": () => import('./Icon-styles.D_CRgw4L.mjs').then(interopDefault),
+  "node_modules/nuxt-icon/dist/runtime/Icon.vue": () => import('./Icon-styles.D531_NA5.mjs').then(interopDefault),
   "node_modules/nuxt-icon/dist/runtime/IconCSS.vue": () => import('./IconCSS-styles.CQL8WjFP.mjs').then(interopDefault),
+  "node_modules/nuxt-icon/dist/runtime/Icon.vue?vue&type=style&index=0&scoped=e8d572f6&lang.css": () => import('./Icon-styles.D_CRgw4L.mjs').then(interopDefault),
   "node_modules/nuxt-icon/dist/runtime/IconCSS.vue?vue&type=style&index=0&scoped=41e8d397&lang.css": () => import('./IconCSS-styles.D5ci0eBM.mjs').then(interopDefault),
   "node_modules/nuxt-rating/dist/runtime/components/NuxtRating.vue": () => import('./NuxtRating-styles.CJ1RQZB4.mjs').then(interopDefault),
   "node_modules/nuxt-rating/dist/runtime/components/NuxtRating.vue?vue&type=style&index=0&scoped=038f2b51&lang.css": () => import('./NuxtRating-styles.CGZ5atyA.mjs').then(interopDefault),

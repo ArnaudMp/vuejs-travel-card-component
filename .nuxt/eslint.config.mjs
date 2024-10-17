@@ -41,7 +41,7 @@ export const options = resolveOptions({
     ],
     "servers": [],
     "root": [
-      "/Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component"
+      "/Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component"
     ],
     "src": [
       ""

@@ -1,20 +1,20 @@
-import { ref, watchEffect, watch, getCurrentInstance, onBeforeUnmount, onDeactivated, onActivated, hasInjectionContext, inject, toRef, isRef, defineAsyncComponent, defineComponent, h, computed, unref, provide, shallowReactive, Suspense, nextTick, Fragment, Transition, useSSRContext, mergeProps, withCtx, createVNode, createApp, effectScope, reactive, getCurrentScope, shallowRef, onErrorCaptured, onServerPrefetch, resolveDynamicComponent, isReadonly, Text, isShallow, isReactive, toRaw, markRaw } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/vue/index.mjs';
-import { $fetch } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/ofetch/dist/node.mjs';
+import { ref, watchEffect, watch, getCurrentInstance, onBeforeUnmount, onDeactivated, onActivated, hasInjectionContext, inject, toRef, isRef, defineAsyncComponent, defineComponent, h, computed, unref, provide, shallowReactive, Suspense, nextTick, Fragment, Transition, useSSRContext, mergeProps, withCtx, createVNode, createApp, effectScope, reactive, getCurrentScope, shallowRef, onErrorCaptured, onServerPrefetch, resolveDynamicComponent, isReadonly, Text, isShallow, isReactive, toRaw, markRaw } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/vue/index.mjs';
+import { $fetch } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/ofetch/dist/node.mjs';
 import { i as injectHead, r as resolveUnrefHeadInput, b as baseURL, s as setHeadInjectionHandler } from '../_/renderer.mjs';
-import { createHooks } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/hookable/dist/index.mjs';
-import { getContext } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unctx/dist/index.mjs';
-import { createError as createError$1, sanitizeStatusCode, getRequestHeaders, getRequestHeader, setCookie, getCookie, deleteCookie } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/h3/dist/index.mjs';
-import { composableNames, unpackMeta } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/@unhead/shared/dist/index.mjs';
-import { CapoPlugin } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unhead/dist/index.mjs';
-import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/vue-router/dist/vue-router.node.mjs';
-import { toRouteMatcher, createRouter as createRouter$1 } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/radix3/dist/index.mjs';
-import { defu, defuFn } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/defu/dist/defu.mjs';
-import { setupDevtoolsPlugin } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/vue-devtools-stub/dist/index.mjs';
-import destr from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/destr/dist/index.mjs';
-import { klona } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/klona/dist/index.mjs';
-import { parse as parse$1 } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/cookie-es/dist/index.mjs';
-import { isEqual as isEqual$1 } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/ohash/dist/index.mjs';
-import { ssrRenderComponent, ssrRenderAttrs, ssrInterpolate, ssrRenderSuspense, ssrRenderVNode } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/vue/server-renderer/index.mjs';
+import { createHooks } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/hookable/dist/index.mjs';
+import { getContext } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unctx/dist/index.mjs';
+import { createError as createError$1, sanitizeStatusCode, getRequestHeaders, getRequestHeader, setCookie, getCookie, deleteCookie } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/h3/dist/index.mjs';
+import { composableNames, unpackMeta } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/@unhead/shared/dist/index.mjs';
+import { CapoPlugin } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unhead/dist/index.mjs';
+import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/vue-router/dist/vue-router.node.mjs';
+import { toRouteMatcher, createRouter as createRouter$1 } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/radix3/dist/index.mjs';
+import { defu, defuFn } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/defu/dist/defu.mjs';
+import { setupDevtoolsPlugin } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/vue-devtools-stub/dist/index.mjs';
+import destr from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/destr/dist/index.mjs';
+import { klona } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/klona/dist/index.mjs';
+import { parse as parse$1 } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/cookie-es/dist/index.mjs';
+import { isEqual as isEqual$1 } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/ohash/dist/index.mjs';
+import { ssrRenderComponent, ssrRenderAttrs, ssrInterpolate, ssrRenderSuspense, ssrRenderVNode } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/vue/server-renderer/index.mjs';
 
 function useHead(input, options = {}) {
   const head = options.head || injectHead();
@@ -853,18 +853,18 @@ const _routes = [
   {
     name: "destinations-id",
     path: "/destinations/:id()",
-    component: () => import('./_id_-DQVz3EqD.mjs')
+    component: () => import('./_id_-nmxHtFEY.mjs')
   },
   {
     name: "destinations",
     path: "/destinations",
     meta: __nuxt_page_meta || {},
-    component: () => import('./index-0K0OxoTf.mjs')
+    component: () => import('./index-ChBp5RtF.mjs')
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-CihmRkvv.mjs')
+    component: () => import('./index-DKSvcM3h.mjs')
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1650,7 +1650,7 @@ const plugin = /* @__PURE__ */ defineNuxtPlugin({
     };
   }
 });
-const LazyHomeCards = defineAsyncComponent(() => import('./HomeCards-BVSd9jw5.mjs').then((r) => r["default"] || r.default || r));
+const LazyHomeCards = defineAsyncComponent(() => import('./HomeCards-_MRuG_Nh.mjs').then((r) => r["default"] || r.default || r));
 const LazyIcon = defineAsyncComponent(() => import('./Icon-DfwXLsqh.mjs').then((r) => r["default"] || r.default || r));
 const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-DAGKEdSo.mjs').then((r) => r["default"] || r.default || r));
 const lazyGlobalComponents = [
@@ -8271,7 +8271,7 @@ const __nuxt_component_0 = defineComponent({
   }
 });
 const layouts = {
-  default: () => import('./default-DHLSEd2t.mjs'),
+  default: () => import('./default-0GYjPno5.mjs'),
   fullscreen: () => import('./fullscreen-xCoGyYH1.mjs')
 };
 const LayoutLoader = defineComponent({

@@ -13,6 +13,6 @@ if (import.meta.hot) {
   })
 }
 
-import cfg0 from "/Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/app.config.js"
+import cfg0 from "/Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/app.config.js"
 
 export default /*@__PURE__*/ defuFn(cfg0, inlineConfig)

@@ -16,21 +16,21 @@
         <div class="flex flex-wrap md:flex-row">
           <div class="button pl-1 pt-10">
             <NuxtLink
-              class="from-white-400 via-white-500 to-white-600 shadow-white-500/50 focus:ring-white-300 dark:shadow-white-800/80 mb-2 me-2 rounded-lg bg-gradient-to-r px-5 py-2.5 text-center text-xl font-medium text-white shadow-lg hover:bg-gradient-to-br focus:outline-none focus:ring-4 dark:shadow-lg dark:focus:ring-green-800"
+              class="button border-3 mb-2 me-2 rounded-lg border border-white px-5 py-2.5 text-center text-sm font-medium text-white hover:border-white hover:text-black hover:bg-white transition-colors duration-150 ease-in-out"
               to="/"
               >Home
             </NuxtLink>
           </div>
           <div class="button pl-1 pt-10">
             <NuxtLink
-              class="from-white-400 via-white-500 to-white-600 shadow-white-500/50 focus:ring-white-300 dark:shadow-white-800/80 mb-2 me-2 rounded-lg bg-gradient-to-r px-5 py-2.5 text-center text-xl font-medium text-white shadow-lg hover:bg-gradient-to-br focus:outline-none focus:ring-4 dark:shadow-lg dark:focus:ring-green-800"
+              class="button border-3 mb-2 me-2 rounded-lg border border-white px-5 py-2.5 text-center text-sm font-medium text-white hover:border-white hover:text-black hover:bg-white transition-colors duration-150 ease-in-out"
               to="/destinations"
               >Toutes les destinations
             </NuxtLink>
           </div>
           <div class="button pl-1 pt-10">
             <NuxtLink
-              class="from-white-400 via-white-500 to-white-600 shadow-white-500/50 focus:ring-white-300 dark:shadow-white-800/80 mb-2 me-2 rounded-lg bg-gradient-to-r px-5 py-2.5 text-center text-xl font-medium text-white shadow-lg hover:bg-gradient-to-br focus:outline-none focus:ring-4 dark:shadow-lg dark:focus:ring-green-800"
+              class="button border-3 mb-2 me-2 rounded-lg border border-white px-5 py-2.5 text-center text-sm font-medium text-white hover:border-white hover:text-black hover:bg-white transition-colors duration-150 ease-in-out"
               to="/about"
               >About
             </NuxtLink>

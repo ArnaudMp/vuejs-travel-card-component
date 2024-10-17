@@ -1,21 +1,21 @@
-import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/h3/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/ofetch/dist/node.mjs';
-import destr from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/hookable/dist/index.mjs';
-import { klona } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/klona/dist/index.mjs';
-import { snakeCase } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/scule/dist/index.mjs';
-import defu, { defuFn } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/ohash/dist/index.mjs';
-import { createStorage, defineDriver, prefixStorage } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unstorage/drivers/fs.mjs';
-import fsDriver from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unstorage/drivers/fs-lite.mjs';
-import lruCache from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unstorage/drivers/lru-cache.mjs';
-import unstorage_47drivers_47vercel_45kv from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unstorage/drivers/vercel-kv.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/radix3/dist/index.mjs';
+import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/h3/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/ofetch/dist/node.mjs';
+import destr from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/destr/dist/index.mjs';
+import { createCall, createFetch } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/hookable/dist/index.mjs';
+import { klona } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/klona/dist/index.mjs';
+import { snakeCase } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/scule/dist/index.mjs';
+import defu, { defuFn } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/ohash/dist/index.mjs';
+import { createStorage, defineDriver, prefixStorage } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unstorage/drivers/fs.mjs';
+import fsDriver from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unstorage/drivers/fs-lite.mjs';
+import lruCache from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unstorage/drivers/lru-cache.mjs';
+import unstorage_47drivers_47vercel_45kv from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/unstorage/drivers/vercel-kv.mjs';
+import { toRouteMatcher, createRouter } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/radix3/dist/index.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname, resolve } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/pathe/dist/index.mjs';
+import { dirname, resolve } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/pathe/dist/index.mjs';
 
 function getEnv(key, opts) {
   const envKey = snakeCase(key).toUpperCase();
@@ -70,7 +70,7 @@ const appConfig = defuFn(appConfig0, inlineAppConfig);
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "60b6a262-0b0d-427e-ad96-4278ce3a8f81",
+    "buildId": "06b293ff-448f-43f6-a9cf-0977ca3c8581",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -561,7 +561,7 @@ function stringifyParsedURL(parsed) {
   return proto + auth + host + pathname + search + hash;
 }
 
-const serverAssets = [{"baseName":"server","dir":"/Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -570,7 +570,7 @@ for (const asset of serverAssets) {
 }
 
 const normalizeFsKey = (item) => item.replaceAll(":", "_");
-const _47Users_47arnaudsween_47Documents_47GC_45Tech_47vuejs_45travel_45card_45component_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js = defineDriver((opts) => {
+const _47Users_47arnaudmichel_47Documents_47GC_45Tech_47vuejs_45travel_45card_45component_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js = defineDriver((opts) => {
   const fs = fsDriver({ base: opts.base });
   const lru = lruCache({ max: 1e3 });
   return {
@@ -595,12 +595,12 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets$1);
 
-storage.mount('internal:nuxt:prerender', _47Users_47arnaudsween_47Documents_47GC_45Tech_47vuejs_45travel_45card_45component_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js({"driver":"/Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js","base":"/Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/.nuxt/cache/nitro/prerender"}));
+storage.mount('internal:nuxt:prerender', _47Users_47arnaudmichel_47Documents_47GC_45Tech_47vuejs_45travel_45card_45component_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js({"driver":"/Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js","base":"/Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/.nuxt/cache/nitro/prerender"}));
 storage.mount('data', unstorage_47drivers_47vercel_45kv({"driver":"vercelKV"}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -1041,14 +1041,14 @@ function getRouteRulesForPath(path) {
 
 const script = "\"use strict\";(()=>{const t=window,e=document.documentElement,c=[\"dark\",\"light\"],n=getStorageValue(\"localStorage\",\"nuxt-color-mode\")||\"system\";let i=n===\"system\"?u():n;const r=e.getAttribute(\"data-color-mode-forced\");r&&(i=r),l(i),t[\"__NUXT_COLOR_MODE__\"]={preference:n,value:i,getColorScheme:u,addColorScheme:l,removeColorScheme:d};function l(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.add(s):e.className+=\" \"+s,a&&e.setAttribute(\"data-\"+a,o)}function d(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.remove(s):e.className=e.className.replace(new RegExp(s,\"g\"),\"\"),a&&e.removeAttribute(\"data-\"+a)}function f(o){return t.matchMedia(\"(prefers-color-scheme\"+o+\")\")}function u(){if(t.matchMedia&&f(\"\").media!==\"not all\"){for(const o of c)if(f(\":\"+o).matches)return o}return\"light\"}})();function getStorageValue(t,e){switch(t){case\"localStorage\":return window.localStorage.getItem(e);case\"sessionStorage\":return window.sessionStorage.getItem(e);case\"cookie\":return getCookie(e);default:return null}}function getCookie(t){const c=(\"; \"+window.document.cookie).split(\"; \"+t+\"=\");if(c.length===2)return c.pop()?.split(\";\").shift()}";
 
-const _r8v1HTMZ8A = (function(nitro) {
+const _ZDQQe0Aslm = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
 const plugins = [
-  _r8v1HTMZ8A
+  _ZDQQe0Aslm
 ];
 
 const errorHandler = (async function errorhandler(error, event) {
@@ -1200,11 +1200,11 @@ const _f4b49z = eventHandler((event) => {
   return readAsset(id);
 });
 
-const _lazy_4GmcnZ = () => import('./_/renderer.mjs').then(function (n) { return n.c; });
+const _lazy_S7PKtK = () => import('./_/renderer.mjs').then(function (n) { return n.c; });
 
 const handlers = [
   { route: '', handler: _f4b49z, lazy: false, middleware: true, method: undefined },
-  { route: '/**', handler: _lazy_4GmcnZ, lazy: true, middleware: false, method: undefined }
+  { route: '/**', handler: _lazy_S7PKtK, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {

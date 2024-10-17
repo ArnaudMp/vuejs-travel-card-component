@@ -6,7 +6,7 @@ useLocaleHead({
 });
 </script>
 <template>
-  <div class="min-h-screen bg-gradient-to-t from-gray-100/40 to-gray-100/40">
+  <div class="min-h-screen bg-white">
     <div class="container mx-auto max-h-screen max-w-screen-xl px-8">
       <HeaderComponent />
     </div>
@@ -14,7 +14,7 @@ useLocaleHead({
     <div v-if="$route.fullPath === '/'">
       <HeroComponent />
     </div>
-    <div class="container mx-auto max-w-screen-xl px-8">
+    <div class="align-center justify-middle container mx-auto max-w-screen-xl px-8">
       <div class="pb-24 pt-12">
         <slot />
       </div>

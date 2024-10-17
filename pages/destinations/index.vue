@@ -1,10 +1,10 @@
 <template>
   <div class="destinations ">
-    <main class="mt-4 text-white [&>*]:mb-4 grid grid-cols-1 md:grid-cols-2 gap-4 " >
+    <main class="text-white px-10 grid gap-4  grid-cols-1 sm:grid-cols-2" >
       <div
         v-for="post in posts"
         :key="post.id"
-        class="card max-h-none rounded-2xl"
+        class=" rounded-2xl"
       >
         <TravelCard :id="post.id" />
       </div>
