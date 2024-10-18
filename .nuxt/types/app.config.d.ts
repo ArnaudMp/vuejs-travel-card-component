@@ -4,7 +4,10 @@ import type { Defu } from 'defu'
 import cfg0 from "../../app.config"
 
 declare const inlineConfig = {
-  "nuxt": {}
+  "nuxt": {},
+  "_MAPBOX_CONFIG": {
+    "accessToken": "{pk.eyJ1IjoiYXJuYXVkc3dlZW4iLCJhIjoiY20yZWZlYmRsMWtvbDJqcXhnc2QxZzBrYyJ9.Fb5BoKHGFCI8TJlLOookNQ}"
+  }
 }
 type ResolvedAppConfig = Defu<typeof inlineConfig, [typeof cfg0]>
 type IsAny<T> = 0 extends 1 & T ? true : false

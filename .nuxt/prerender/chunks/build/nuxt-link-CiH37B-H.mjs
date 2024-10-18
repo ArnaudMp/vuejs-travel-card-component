@@ -1,4 +1,4 @@
-import { defineComponent, ref, h, resolveComponent, computed } from 'file:///Users/arnaudmichel/Documents/GC-Tech/vuejs-travel-card-component/node_modules/vue/index.mjs';
+import { defineComponent, ref, h, resolveComponent, computed } from 'file:///Users/arnaudsween/Documents/GC-Tech/vuejs-travel-card-component/node_modules/vue/index.mjs';
 import { s as useRouter, t as parseQuery, v as nuxtLinkDefaults, n as hasProtocol, x as resolveRouteObject, o as joinURL, y as navigateTo, d as useNuxtApp, q as useRuntimeConfig, z as withTrailingSlash, A as withoutTrailingSlash } from './server.mjs';
 
 async function preloadRouteComponents(to, router = useRouter()) {

@@ -23,6 +23,26 @@
     },
     {
       "headers": {
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "*",
+        "access-control-allow-headers": "*",
+        "access-control-max-age": "0",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "*",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Headers": "*",
+        "Access-Control-Expose-Headers": "*"
+      },
+      "src": "/api/(.*)"
+    },
+    {
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      },
+      "src": "/_fonts/(.*)"
+    },
+    {
+      "headers": {
         "cache-control": "public, max-age=31536000, immutable"
       },
       "src": "/_nuxt/(.*)"
@@ -36,6 +56,13 @@
     },
     {
       "src": "/_nuxt/builds(.*)",
+      "headers": {
+        "cache-control": "public,max-age=31536000,immutable"
+      },
+      "continue": true
+    },
+    {
+      "src": "/_fonts(.*)",
       "headers": {
         "cache-control": "public,max-age=31536000,immutable"
       },

@@ -152,6 +152,9 @@
       "#cookie-control/*": [
         "../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/*"
       ],
+      "mapbox-gl": [
+        "./mapbox-gl"
+      ],
       "#vue-router": [
         "./vue-router"
       ]
@@ -175,6 +178,8 @@
     "../node_modules/@nuxtjs/i18n/runtime/server",
     "../node_modules/@dargmuesli/nuxt-cookie-control/runtime/server",
     "../node_modules/nuxt-rating/runtime/server",
+    "../node_modules/nuxt-mapbox/runtime/server",
+    "../node_modules/@nuxt/fonts/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "./types/nitro.d.ts",

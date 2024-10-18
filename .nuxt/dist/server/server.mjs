@@ -23,7 +23,7 @@ if (!globalThis.$fetch) {
 }
 const appPageTransition = { "name": "page", "mode": "out-in" };
 const appLayoutTransition = false;
-const appKeepalive = false;
+const appKeepalive = true;
 const nuxtLinkDefaults = { "componentName": "NuxtLink", "prefetch": true, "prefetchOn": { "visibility": true } };
 const asyncDataDefaults = { "value": null, "errorValue": null, "deep": true };
 const fetchDefaults = {};
@@ -792,18 +792,18 @@ const _routes = [
   {
     name: "destinations-id",
     path: "/destinations/:id()",
-    component: () => import("./_nuxt/_id_-nmxHtFEY.js")
+    component: () => import("./_nuxt/_id_-D1_04VT5.js")
   },
   {
     name: "destinations",
     path: "/destinations",
     meta: __nuxt_page_meta || {},
-    component: () => import("./_nuxt/index-ChBp5RtF.js")
+    component: () => import("./_nuxt/index-DsCr48yF.js")
   },
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-DKSvcM3h.js")
+    component: () => import("./_nuxt/index-CD9thUSA.js")
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1925,7 +1925,10 @@ const cfg0 = defineAppConfig({
   title: "My Travel App"
 });
 const inlineConfig = {
-  "nuxt": {}
+  "nuxt": {},
+  "_MAPBOX_CONFIG": {
+    "accessToken": "{pk.eyJ1IjoiYXJuYXVkc3dlZW4iLCJhIjoiY20yZWZlYmRsMWtvbDJqcXhnc2QxZzBrYyJ9.Fb5BoKHGFCI8TJlLOookNQ}"
+  }
 };
 const __appConfig = /* @__PURE__ */ defuFn(cfg0, inlineConfig);
 function useAppConfig() {
@@ -1950,7 +1953,7 @@ const plugin = /* @__PURE__ */ defineNuxtPlugin({
     };
   }
 });
-const LazyHomeCards = defineAsyncComponent(() => import("./_nuxt/HomeCards-_MRuG_Nh.js").then((r) => r["default"] || r.default || r));
+const LazyHomeCards = defineAsyncComponent(() => import("./_nuxt/HomeCards-8oH3S-UW.js").then((r) => r["default"] || r.default || r));
 const LazyIcon = defineAsyncComponent(() => import("./_nuxt/Icon-DfwXLsqh.js").then((r) => r["default"] || r.default || r));
 const LazyIconCSS = defineAsyncComponent(() => import("./_nuxt/IconCSS-DAGKEdSo.js").then((r) => r["default"] || r.default || r));
 const lazyGlobalComponents = [
@@ -8673,7 +8676,7 @@ const __nuxt_component_0 = defineComponent({
   }
 });
 const layouts = {
-  default: () => import("./_nuxt/default-0GYjPno5.js"),
+  default: () => import("./_nuxt/default-Bh_av_LZ.js"),
   fullscreen: () => import("./_nuxt/fullscreen-xCoGyYH1.js")
 };
 const LayoutLoader = defineComponent({

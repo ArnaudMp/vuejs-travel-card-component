@@ -1,6 +1,6 @@
 <template>
   <div class="destinations ">
-    <main class="text-white px-10 grid gap-4  grid-cols-1 sm:grid-cols-2" >
+    <main class="text-white px-2 sm:px-10 grid gap-4   grid-cols-1 sm:grid-cols-2" >
       <div
         v-for="post in posts"
         :key="post.id"

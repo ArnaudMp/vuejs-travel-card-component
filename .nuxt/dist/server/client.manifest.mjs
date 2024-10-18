@@ -10,8 +10,28 @@ export default {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "TravelCard.zJ4_UGgg.css",
+    "file": "TravelCard.Do3DHKXw.css",
     "src": "_!~{00f}~.js"
+  },
+  "_BOzRIFRF.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "BOzRIFRF.js",
+    "name": "autoplay",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "css": [
+      "autoplay.BkhtZMPQ.css"
+    ]
+  },
+  "autoplay.BkhtZMPQ.css": {
+    "file": "autoplay.BkhtZMPQ.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
   },
   "_DCgJ6GlI.js": {
     "resourceType": "script",
@@ -21,12 +41,23 @@ export default {
     "file": "DCgJ6GlI.js",
     "name": "index"
   },
-  "_DOyCoxFE.js": {
+  "_DJe4GyUp.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DOyCoxFE.js",
+    "file": "DJe4GyUp.js",
+    "name": "fetch",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_DVzL8blR.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "DVzL8blR.js",
     "name": "nuxt-link",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
@@ -40,56 +71,25 @@ export default {
     "file": "DlAUqK2U.js",
     "name": "_plugin-vue_export-helper"
   },
-  "_DlkCi8wn.js": {
+  "_b3iYJXRb.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DlkCi8wn.js",
-    "name": "fetch",
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js"
-    ]
-  },
-  "_DlnBzySe.js": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "DlnBzySe.js",
+    "file": "b3iYJXRb.js",
     "name": "TravelCard",
     "imports": [
-      "_DOyCoxFE.js",
-      "_DlkCi8wn.js",
+      "_DVzL8blR.js",
+      "_DJe4GyUp.js",
       "_DlAUqK2U.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
-      "TravelCard.zJ4_UGgg.css"
+      "TravelCard.Do3DHKXw.css"
     ]
   },
-  "TravelCard.zJ4_UGgg.css": {
-    "file": "TravelCard.zJ4_UGgg.css",
-    "resourceType": "style",
-    "prefetch": true,
-    "preload": true
-  },
-  "_DniFdmtU.js": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "DniFdmtU.js",
-    "name": "autoplay",
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js"
-    ],
-    "css": [
-      "autoplay.BkhtZMPQ.css"
-    ]
-  },
-  "autoplay.BkhtZMPQ.css": {
-    "file": "autoplay.BkhtZMPQ.css",
+  "TravelCard.Do3DHKXw.css": {
+    "file": "TravelCard.Do3DHKXw.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -127,16 +127,16 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Cpw1mjan.js",
+    "file": "By8i5LIl.js",
     "name": "HomeCards",
     "src": "components/global/HomeCards.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_DniFdmtU.js",
-      "_DlnBzySe.js",
-      "_DlkCi8wn.js",
+      "_BOzRIFRF.js",
+      "_b3iYJXRb.js",
+      "_DJe4GyUp.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_DOyCoxFE.js",
+      "_DVzL8blR.js",
       "_DlAUqK2U.js"
     ],
     "css": [
@@ -164,13 +164,13 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "C7L28p2z.js",
+    "file": "D8iNGyDS.js",
     "name": "default",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_DOyCoxFE.js",
+      "_DVzL8blR.js",
       "_DlAUqK2U.js"
     ],
     "css": [
@@ -188,7 +188,7 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BfXzUd06.js",
+    "file": "BXLE52BG.js",
     "name": "fullscreen",
     "src": "layouts/fullscreen.vue",
     "isDynamicEntry": true,
@@ -243,7 +243,7 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Dr6fJ3uu.js",
+    "file": "CPQ7cVQr.js",
     "name": "Icon",
     "src": "node_modules/nuxt-icon/dist/runtime/Icon.vue",
     "isDynamicEntry": true,
@@ -265,7 +265,7 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "8d6N3Spj.js",
+    "file": "DIPF8l5s.js",
     "name": "IconCSS",
     "src": "node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
     "isDynamicEntry": true,
@@ -287,7 +287,7 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DkoXPSqG.js",
+    "file": "CublJ5he.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -299,6 +299,7 @@ export default {
     "css": [
       "entry.GI64rjja.css"
     ],
+    "assets": [],
     "_globalCSS": true
   },
   "entry.GI64rjja.css": {
@@ -312,7 +313,7 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Bw3fI6ot.js",
+    "file": "CQi7SNsy.js",
     "name": "about",
     "src": "pages/about.vue",
     "isDynamicEntry": true,
@@ -325,18 +326,18 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DuCVuaEx.js",
+    "file": "K840vnFg.js",
     "name": "_id_",
     "src": "pages/destinations/[id].vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_DlAUqK2U.js",
-      "_DniFdmtU.js",
-      "_DlkCi8wn.js"
+      "_BOzRIFRF.js",
+      "_DJe4GyUp.js"
     ],
     "css": [
-      "_id_.BatDEvAj.css"
+      "_id_.BcqLlx2B.css"
     ],
     "assets": [
       "1.B97qKlVb.jpg",
@@ -344,8 +345,8 @@ export default {
       "3.DFAJ96x1.jpg"
     ]
   },
-  "_id_.BatDEvAj.css": {
-    "file": "_id_.BatDEvAj.css",
+  "_id_.BcqLlx2B.css": {
+    "file": "_id_.BcqLlx2B.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -373,15 +374,15 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "LHZnSsIY.js",
+    "file": "BxqryG4V.js",
     "name": "index",
     "src": "pages/destinations/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_DlnBzySe.js",
+      "_b3iYJXRb.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_DlkCi8wn.js",
-      "_DOyCoxFE.js",
+      "_DJe4GyUp.js",
+      "_DVzL8blR.js",
       "_DlAUqK2U.js"
     ]
   },
@@ -390,17 +391,17 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DcON_m7P.js",
+    "file": "DSPwKIyw.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "components/global/HomeCards.vue",
       "node_modules/nuxt/dist/app/entry.js",
-      "_DniFdmtU.js",
-      "_DlnBzySe.js",
-      "_DOyCoxFE.js",
-      "_DlkCi8wn.js",
+      "_BOzRIFRF.js",
+      "_b3iYJXRb.js",
+      "_DVzL8blR.js",
+      "_DJe4GyUp.js",
       "_DlAUqK2U.js"
     ]
   }

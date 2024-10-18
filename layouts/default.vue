@@ -14,7 +14,7 @@ useLocaleHead({
     <div v-if="$route.fullPath === '/'">
       <HeroComponent />
     </div>
-    <div class="align-center justify-middle container mx-auto max-w-screen-xl px-8">
+    <div class="align-center justify-middle container mx-0 sm:mx-auto sm:max-w-screen-xl px-1 sm:px-8">
       <div class="pb-24 pt-12">
         <slot />
       </div>
