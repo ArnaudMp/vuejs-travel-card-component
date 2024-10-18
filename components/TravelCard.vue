@@ -8,7 +8,7 @@ class="travel-card overflow-hidden rounded-3xl bg-cover"
         <div class="grid grid-cols-2 justify-between">
 
           <div class="title" data-swiper-parallax="-300">
-            <p class="text-xl sm:text-4xl font-bold">{{ post.title.charAt(0).toUpperCase() + post.title.slice(1) }}</p>
+            <p class="text-xl sm:text-4xl font-bold">{{ post.title.charAt(0).toUpperCase() + post.title.slice(1, 20) }}</p>
           </div>
           <div class="flex  flex-wrap h-min justify-end">
             <div
@@ -23,13 +23,13 @@ class="travel-card overflow-hidden rounded-3xl bg-cover"
         </div>
         <div class="subtitle pt-10" data-swiper-parallax="-200">
           <p class="text-md sm:text-2xl font-light">
-            {{ post.body.slice(0, 40) }}
+            {{ post.body.slice(0, 25) }}
           </p>
         </div>
         <div class="text pt-4 sm:pt-10" data-swiper-parallax="-100">
           <p class="text-xs sm:text-lg">
-            {{ post.body }}
-            {{ post.body }}
+            {{ post.body.slice(0, 100) }}
+            {{ post.body.slice(0, 100) }}
           </p>
         </div>
 

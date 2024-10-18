@@ -859,12 +859,12 @@ const _routes = [
     name: "destinations",
     path: "/destinations",
     meta: __nuxt_page_meta || {},
-    component: () => import('./index-CZY_35si.mjs')
+    component: () => import('./index-DO8R5lo5.mjs')
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-C7J48EWw.mjs')
+    component: () => import('./index-DFRY4Uwi.mjs')
   }
 ];
 const _wrapIf = (component, props, slots) => {
