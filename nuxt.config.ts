@@ -1,8 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 import { defineNuxtConfig } from "nuxt/config";
-import en from "./locales/en-US.json";
-import fr from "./locales/fr-FR.json";
-import ar from "./locales/ar-AR.json";
 
 export default defineNuxtConfig({
   devtools: {
@@ -33,16 +29,13 @@ export default defineNuxtConfig({
     "/destinations": { ssr: false },
     "/destinations/*": { ssr: false },
     "/api/**": {
-      // enable CORS
-      cors: true, // if enabled, also needs cors-preflight-request.ts Nitro middleware to answer CORS preflight requests
+      cors: true,
       headers: {
-        // CORS headers
-        "Access-Control-Allow-Origin": "*", // 'http://example:6006', has to be set to the requesting domain that you want to send the credentials back to
-        "Access-Control-Allow-Methods": "*", // 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS'
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "*",
         "Access-Control-Allow-Credentials": "true",
-        "Access-Control-Allow-Headers": "*", // 'Origin, Content-Type, Accept, Authorization, X-Requested-With'
+        "Access-Control-Allow-Headers": "*",
         "Access-Control-Expose-Headers": "*",
-        // 'Access-Control-Max-Age': '7200', // 7200 = caching 2 hours (Chromium default), https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Max-Age#directives
       },
     },
   },
@@ -62,8 +55,6 @@ export default defineNuxtConfig({
     "nuxt-mapbox",
     "@nuxt/fonts"
   ],
-
-  googleFonts: {},
 
   mapbox: {
     accessToken:
@@ -124,47 +115,9 @@ export default defineNuxtConfig({
     detectBrowserLanguage: {
       useCookie: false,
       alwaysRedirect: true,
-      fallbackLocale: "en-US",
-      redirectOn: "root", // recommended
+      fallbackLocale: "fr-FR",
+      redirectOn: "root",
     },
-  },
-
-  // eslint: {
-  //   lintOnStart: false,
-  // },
-
-  cookieControl: {
-    cookieExpiryOffsetMs: 1000 * 60 * 60 * 24 * 365, // one year
-    // set all these to true for highest GDPR enforcement
-    isAcceptNecessaryButtonEnabled: true,
-    isModalForced: false,
-    isCookieIdVisible: true,
-    closeModalOnClickOutside: true,
-    // show cookie button
-    isControlButtonEnabled: true,
-    // disable to get unstyled css for tailwind
-    isCssEnabled: false,
-    isDashInDescriptionEnabled: false,
-    cookies: {
-      necessary: [
-        {
-          name: {
-            fr: fr.cookies.necessary.title,
-            en: en.cookies.necessary.title,
-            ar: ar.cookies.necessary.title,
-          },
-          description: {
-            fr: fr.cookies.necessary.description,
-            en: en.cookies.necessary.description,
-            ar: ar.cookies.necessary.description,
-          },
-          targetCookieIds: ["ncc_"],
-          id: "",
-        },
-      ],
-      optional: [],
-    },
-    locales: ["en", "fr", "ar"],
   },
 
   compatibilityDate: "2024-09-15",

@@ -2,11 +2,11 @@
 import type { DefineComponent, SlotsType } from 'vue'
 type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refresh: () => Promise<void>}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
 interface _GlobalComponents {
-      'HomeCards': typeof import("../components/global/HomeCards.vue")['default']
-    'DestinationCard': typeof import("../components/DestinationCard.vue")['default']
+      'DestinationCard': typeof import("../components/DestinationCard.vue")['default']
     'FooterComponent': typeof import("../components/FooterComponent.vue")['default']
     'HeaderComponent': typeof import("../components/HeaderComponent.vue")['default']
     'HeroComponent': typeof import("../components/HeroComponent.vue")['default']
+    'HomeCards': typeof import("../components/HomeCards.vue")['default']
     'MapComponent': typeof import("../components/MapComponent.vue")['default']
     'RateComponent': typeof import("../components/RateComponent.vue")['default']
     'TravelCard': typeof import("../components/TravelCard.vue")['default']
@@ -54,11 +54,11 @@ interface _GlobalComponents {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
-      'LazyHomeCards': typeof import("../components/global/HomeCards.vue")['default']
-    'LazyDestinationCard': typeof import("../components/DestinationCard.vue")['default']
+      'LazyDestinationCard': typeof import("../components/DestinationCard.vue")['default']
     'LazyFooterComponent': typeof import("../components/FooterComponent.vue")['default']
     'LazyHeaderComponent': typeof import("../components/HeaderComponent.vue")['default']
     'LazyHeroComponent': typeof import("../components/HeroComponent.vue")['default']
+    'LazyHomeCards': typeof import("../components/HomeCards.vue")['default']
     'LazyMapComponent': typeof import("../components/MapComponent.vue")['default']
     'LazyRateComponent': typeof import("../components/RateComponent.vue")['default']
     'LazyTravelCard': typeof import("../components/TravelCard.vue")['default']
@@ -112,11 +112,11 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
-export const HomeCards: typeof import("../components/global/HomeCards.vue")['default']
 export const DestinationCard: typeof import("../components/DestinationCard.vue")['default']
 export const FooterComponent: typeof import("../components/FooterComponent.vue")['default']
 export const HeaderComponent: typeof import("../components/HeaderComponent.vue")['default']
 export const HeroComponent: typeof import("../components/HeroComponent.vue")['default']
+export const HomeCards: typeof import("../components/HomeCards.vue")['default']
 export const MapComponent: typeof import("../components/MapComponent.vue")['default']
 export const RateComponent: typeof import("../components/RateComponent.vue")['default']
 export const TravelCard: typeof import("../components/TravelCard.vue")['default']
@@ -164,11 +164,11 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
-export const LazyHomeCards: typeof import("../components/global/HomeCards.vue")['default']
 export const LazyDestinationCard: typeof import("../components/DestinationCard.vue")['default']
 export const LazyFooterComponent: typeof import("../components/FooterComponent.vue")['default']
 export const LazyHeaderComponent: typeof import("../components/HeaderComponent.vue")['default']
 export const LazyHeroComponent: typeof import("../components/HeroComponent.vue")['default']
+export const LazyHomeCards: typeof import("../components/HomeCards.vue")['default']
 export const LazyMapComponent: typeof import("../components/MapComponent.vue")['default']
 export const LazyRateComponent: typeof import("../components/RateComponent.vue")['default']
 export const LazyTravelCard: typeof import("../components/TravelCard.vue")['default']

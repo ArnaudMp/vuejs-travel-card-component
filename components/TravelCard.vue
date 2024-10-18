@@ -2,31 +2,32 @@
   <NuxtLink :to="`/destinations/${post.id}`">
     <div
 class="travel-card overflow-hidden rounded-3xl bg-cover"
-      :style="{ backgroundImage: `url(img/${post.id}.jpg)` }">
+      :style="{ backgroundImage: `url(../img/${post.id}.jpg)` }">
       <div
         class="bg-white/50 p-5 text-left text-black transition-colors duration-500 ease-in-out hover:bg-black/30 hover:text-white sm:p-20">
         <div class="grid grid-cols-2 justify-between">
 
           <div class="title" data-swiper-parallax="-300">
-            <p class="text-4xl font-bold">{{ post.title.slice(0, 25) }}</p>
-            <!-- <p class="text-4xl font-bold">{{ image.url }}</p> -->
+            <p class="text-xl sm:text-4xl font-bold">{{ post.title.charAt(0).toUpperCase() + post.title.slice(1) }}</p>
           </div>
-          <div class="flex flex-wrap justify-end">
-            <div class="tag px-4 py-2 m-1 rounded-3xl  border-2 border-orange-500 bg-orange-500 text-white">
+          <div class="flex  flex-wrap h-min justify-end">
+            <div
+              class="text-xs sm:text-lg tag px-4 py-2 m-1 rounded-3xl  border-2 border-orange-500 bg-orange-500 text-white">
               <span>Popular destination</span>
             </div>
-            <div class="tag px-4 py-2 m-1 rounded-3xl  border-2 border-green-500 text-white bg-green-500">
+            <div
+              class="text-xs sm:text-lg tag px-4 py-2 m-1 rounded-3xl  border-2 border-green-500 text-white bg-green-500">
               <span>Best for adventure</span>
             </div>
           </div>
         </div>
         <div class="subtitle pt-10" data-swiper-parallax="-200">
-          <p class="text-2xl font-light">
+          <p class="text-md sm:text-2xl font-light">
             {{ post.body.slice(0, 40) }}
           </p>
         </div>
-        <div class="text pt-10" data-swiper-parallax="-100">
-          <p class="text-lg">
+        <div class="text pt-4 sm:pt-10" data-swiper-parallax="-100">
+          <p class="text-xs sm:text-lg">
             {{ post.body }}
             {{ post.body }}
           </p>
@@ -74,9 +75,5 @@ export default {
 <style lang="postcss">
 .travel-card:hover .button {
   @apply border-white bg-white text-black transition-colors duration-150 ease-in-out;
-}
-
-.title {
-  font-family: Merriweather, sans-serif;
 }
 </style>

@@ -5,8 +5,8 @@
     <div class="container mx-auto max-h-screen max-w-screen-xl pt-30 px-8">
         <section class="w-full">
           <div class="flex justify-start">
-            <h1 class="font-sans text-5xl sm:text-7xl font-thin text-white pr-2">My</h1>
-            <h1 class="font-sans text-5xl sm:text-7xl font-bold text-green-400">
+            <h1 class="title font-sans text-5xl sm:text-7xl font-bold text-white pr-2">My</h1>
+            <h1 class="title font-sans text-5xl sm:text-7xl font-bold text-green-400">
               Travel App
             </h1>
           </div>

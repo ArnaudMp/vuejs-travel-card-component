@@ -73,7 +73,7 @@ const appConfig = defuFn(appConfig0, inlineAppConfig);
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "d56c5ca6-906d-46d8-8d72-d9dd0f43b8ed",
+    "buildId": "ffd996b9-9ef2-4837-a94c-3da563e54291",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -151,7 +151,7 @@ const _inlineRuntimeConfig = {
         "cookieDomain": "",
         "cookieKey": "i18n_redirected",
         "cookieSecure": false,
-        "fallbackLocale": "en-US",
+        "fallbackLocale": "fr-FR",
         "redirectOn": "root",
         "useCookie": false
       },
@@ -167,7 +167,7 @@ const _inlineRuntimeConfig = {
     },
     "cookieControl": {
       "barPosition": "bottom-full",
-      "closeModalOnClickOutside": true,
+      "closeModalOnClickOutside": false,
       "colors": {
         "barBackground": "#000",
         "barButtonBackground": "#fff",
@@ -197,24 +197,7 @@ const _inlineRuntimeConfig = {
         "modalUnsavedColor": "#fff"
       },
       "cookies": {
-        "necessary": [
-          {
-            "name": {
-              "fr": "Cookies strictement nécessaires",
-              "en": "Strictly necessary cookies",
-              "ar": "ملفات تعريف الارتباط الضرورية"
-            },
-            "description": {
-              "fr": "Ces cookies sont indispensables au bon fonctionnement de mon site internet. Sans ces cookies, le site Web ne fonctionnerait pas correctement",
-              "en": "These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly",
-              "ar": "هذه ملفات ضرورية للعمل الصحيح لموقع الويب. بدون هذه الملفات، لن يعمل الموقع بشكل صحيح"
-            },
-            "targetCookieIds": [
-              "ncc_"
-            ],
-            "id": ""
-          }
-        ],
+        "necessary": [],
         "optional": []
       },
       "cookieExpiryOffsetMs": 31536000000,
@@ -227,16 +210,13 @@ const _inlineRuntimeConfig = {
       },
       "isAcceptNecessaryButtonEnabled": true,
       "isControlButtonEnabled": true,
-      "isCookieIdVisible": true,
-      "isCssEnabled": false,
+      "isCookieIdVisible": false,
+      "isCssEnabled": true,
       "isCssPonyfillEnabled": false,
-      "isDashInDescriptionEnabled": false,
+      "isDashInDescriptionEnabled": true,
       "isIframeBlocked": false,
       "isModalForced": false,
       "locales": [
-        "en",
-        "fr",
-        "ar",
         "en"
       ],
       "localeTexts": {
@@ -256,40 +236,6 @@ const _inlineRuntimeConfig = {
           "manageCookies": "Learn more and customize",
           "save": "Save",
           "settingsUnsaved": "You have unsaved settings"
-        },
-        "fr": {
-          "accept": "Accepter",
-          "acceptAll": "Tout accepter",
-          "bannerDescription": "Nous utilisons des cookies d’origine et des cookies tiers. Ces cookies sont destinés à vous offrir une navigation optimisée sur ce site web et de nous donner un aperçu de son utilisation, en vue de l’amélioration des services que nous offrons. En poursuivant votre navigation, nous considérons que vous acceptez l’usage des cookies.",
-          "bannerTitle": "Cookies",
-          "close": "Fermer",
-          "cookiesFunctional": "Cookies fonctionnels",
-          "cookiesNecessary": "Les cookies obligatoires",
-          "cookiesOptional": "Les cookies optionnels",
-          "decline": "J'accepte le nécessaire",
-          "declineAll": "Tout refuser",
-          "here": "ici",
-          "iframeBlocked": "Pour voir cela, veuillez activer les cookies fonctionnels",
-          "manageCookies": "Gérer les cookies",
-          "save": "Sauvegarder",
-          "settingsUnsaved": "Vous avez des paramètres non sauvegardés"
-        },
-        "ar": {
-          "accept": "قبول",
-          "acceptAll": "قبول الكل",
-          "bannerDescription": "نحن نستخدم ملفات تعريف الارتباط الخاصة بنا وملفات تعريف الارتباط الخاصة بالجهات الخارجية حتى نتمكن من عرض هذا الموقع وفهم كيفية استخدامه بشكل أفضل ، بهدف تحسين الخدمات التي نقدمها. إذا واصلت التصفح ، فإننا نعتبر أنك قبلت ملفات تعريف الارتباط.",
-          "bannerTitle": "ملفات تعريف الارتباط",
-          "close": "إغلاق",
-          "cookiesFunctional": "ملفات تعريف الارتباط الوظيفية",
-          "cookiesNecessary": "ملفات تعريف الارتباط الضرورية",
-          "cookiesOptional": "ملفات تعريف الارتباط الاختيارية",
-          "decline": "تقبل الضرورة",
-          "declineAll": "حذف الكل",
-          "here": "هنا",
-          "iframeBlocked": "لرؤية هذا ، يرجى تمكين ملفات تعريف الارتباط الوظيفية",
-          "manageCookies": "إدارة ملفات تعريف الارتباط",
-          "save": "حفظ",
-          "settingsUnsaved": "لديك إعدادات غير محفوظة"
         }
       }
     }

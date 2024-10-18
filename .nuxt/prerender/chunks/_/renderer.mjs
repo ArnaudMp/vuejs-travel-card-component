@@ -461,5 +461,5 @@ const renderer$1 = /*#__PURE__*/Object.freeze({
   default: renderer
 });
 
-export { buildAssetsURL as a, baseURL as b, renderer$1 as c, injectHead as i, resolveUnrefHeadInput as r, setHeadInjectionHandler as s };
+export { buildAssetsURL as a, baseURL as b, renderer$1 as c, injectHead as i, publicAssetsURL as p, resolveUnrefHeadInput as r, setHeadInjectionHandler as s };
 //# sourceMappingURL=renderer.mjs.map

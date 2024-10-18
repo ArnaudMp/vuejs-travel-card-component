@@ -1,17 +1,17 @@
 <template>
     <div class="bg-white/90 p-5 sm:p-20">
         <div class="title">
-            <p class="text-4xl font-bold">Lorem Ipum</p>
+            <p class="text-2xl sm:text-4xl font-bold">Lorem Ipum</p>
             <!-- <p class="text-4xl font-bold">{{ image.url }}</p> -->
         </div>
         <div class="py-5">
             <NuxtRating
 border-color="#db8403" active-color="#ffa41c" inactive-color="#fff" :rating-step="0.5"
-                :rounded-corners="true" :border-width="5" :rating-size="30" :rating-value="ratingValue"
+                :rounded-corners="true" :border-width="5" :rating-size="15" :rating-value="ratingValue"
                 @rating-selected="logRating" @rating-hovered="event => (rating = event)" />
         </div>
         <div>
-            <p class="text-lg">
+            <p class="text-sm sm:text-lg">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore nobis nesciunt cumque!
                 Porro, exercitationem vero doloremque suscipit pariatur repudiandae, consectetur reiciendis fuga, facere
                 minima tempore ipsa nesciunt vel quos?

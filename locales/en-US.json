@@ -1,30 +1,14 @@
 {
   "locale.en-US": "English",
   "locale.fr-FR": "French",
-  "locale.ar-AR": "Arabic",
   "locale.dir": "ltr",
   "site": {
-    "name": "Nuxt Boilerplate"
+    "name": "My Travel App"
   },
   "themes": {
     "system": "System",
     "light": "Light",
     "dark": "Dark"
-  },
-  "cookies": {
-    "bar": {
-      "title": "🍪 Hi. This site uses cookies",
-      "description": "We use cookies and similar technologies to help personalize content and offer a better experience. You can opt to customize them by clicking the customize button."
-    },
-    "modal": {
-      "title": "Customize",
-      "description": "We use different types of cookies to optimize your experience on our website. Click on the categories below to learn more about their purposes. You can choose the types of cookies to be allowed and can change your preferences later. Remember that disabling cookies can affect your experience.",
-      "privacy-policy": "Privacy policy"
-    },
-    "necessary": {
-      "title": "Strictly necessary cookies",
-      "description": "These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly"
-    }
   },
   "error": {
     "return": "Go back",
@@ -37,11 +21,6 @@
         "description": "Home page"
       },
       "link": "Home",
-      "hero": {
-        "title": "Nuxt Boilerplate",
-        "subtitle": "Unofficial",
-        "description": "A ready to use starter kit for all kinds of projects"
-      },
       "features": {
         "googleFonts": "Google Fonts",
         "eslint": "ESLint",
@@ -66,16 +45,14 @@
       },
       "link": "About",
       "title": "About",
-      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
+      "p": "As a front-end and mobile developer, I'm passionate about creating innovative, high-performance digital experiences.With solid experience in web and mobile application development, I combine technical skills and creativity to design intuitive, user-centered interfaces. Always on the lookout for new technologies and trends, I'm ready to take on ambitious challenges and contribute to high-impact projects."
     },
     "destinations": {
       "meta": {
-        "title": "Destinations page (Fullscreen-layout)",
-        "description": "Destinations page using Fullscreen-layout"
+        "title": "Destinations page",
+        "description": "Destinations"
       },
-      "link": "Destinations",
-      "title": "Destinations with Fullscreen-layout",
-      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
+      "link": "Destinations"
     }
   }
 }

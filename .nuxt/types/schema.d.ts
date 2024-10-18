@@ -426,9 +426,7 @@ declare module 'nuxt/schema' {
       },
 
       cookies: {
-         necessary: Array<{
-
-         }>,
+         necessary: Array<any>,
 
          optional: Array<any>,
       },
@@ -444,7 +442,7 @@ declare module 'nuxt/schema' {
 
          sameSite: string,
 
-         secure: any,
+         secure: boolean,
       },
 
       isAcceptNecessaryButtonEnabled: boolean,
@@ -467,70 +465,6 @@ declare module 'nuxt/schema' {
 
       localeTexts: {
          en: {
-            accept: string,
-
-            acceptAll: string,
-
-            bannerDescription: string,
-
-            bannerTitle: string,
-
-            close: string,
-
-            cookiesFunctional: string,
-
-            cookiesNecessary: string,
-
-            cookiesOptional: string,
-
-            decline: string,
-
-            declineAll: string,
-
-            here: string,
-
-            iframeBlocked: string,
-
-            manageCookies: string,
-
-            save: string,
-
-            settingsUnsaved: string,
-         },
-
-         fr: {
-            accept: string,
-
-            acceptAll: string,
-
-            bannerDescription: string,
-
-            bannerTitle: string,
-
-            close: string,
-
-            cookiesFunctional: string,
-
-            cookiesNecessary: string,
-
-            cookiesOptional: string,
-
-            decline: string,
-
-            declineAll: string,
-
-            here: string,
-
-            iframeBlocked: string,
-
-            manageCookies: string,
-
-            save: string,
-
-            settingsUnsaved: string,
-         },
-
-         ar: {
             accept: string,
 
             acceptAll: string,

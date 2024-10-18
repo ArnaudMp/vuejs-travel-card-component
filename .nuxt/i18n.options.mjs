@@ -49,7 +49,7 @@ export const nuxtI18nOptions = {
     "cookieDomain": null,
     "cookieKey": "i18n_redirected",
     "cookieSecure": false,
-    "fallbackLocale": "en-US",
+    "fallbackLocale": "fr-FR",
     "redirectOn": "root",
     "useCookie": false
   },

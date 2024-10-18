@@ -3,7 +3,7 @@
     <div class="container mx-auto max-h-screen max-w-screen-xl px-8">
       <section class="w-full">
         <div class="flex justify-start">
-          <h1 class="pr-2 font-sans text-5xl font-thin text-white sm:text-7xl">
+          <h1 class="title pr-2 font-sans text-5xl font-thin text-white sm:text-7xl">
             Footer
           </h1>
         </div>
@@ -18,21 +18,21 @@
             <NuxtLink
               class="button border-3 mb-2 me-2 rounded-lg border border-white px-5 py-2.5 text-center text-sm font-medium text-white hover:border-white hover:text-black hover:bg-white transition-colors duration-150 ease-in-out"
               to="/"
-              >Home
+              >{{ $t("pages.index.link") }}
             </NuxtLink>
           </div>
           <div class="button pl-1 pt-10">
             <NuxtLink
               class="button border-3 mb-2 me-2 rounded-lg border border-white px-5 py-2.5 text-center text-sm font-medium text-white hover:border-white hover:text-black hover:bg-white transition-colors duration-150 ease-in-out"
               to="/destinations"
-              >Toutes les destinations
+              >{{ $t("pages.destinations.link") }}
             </NuxtLink>
           </div>
           <div class="button pl-1 pt-10">
             <NuxtLink
               class="button border-3 mb-2 me-2 rounded-lg border border-white px-5 py-2.5 text-center text-sm font-medium text-white hover:border-white hover:text-black hover:bg-white transition-colors duration-150 ease-in-out"
               to="/about"
-              >About
+              >{{ $t("pages.about.link") }}
             </NuxtLink>
           </div>
         </div>

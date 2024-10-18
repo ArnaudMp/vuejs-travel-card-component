@@ -29,3 +29,7 @@ html.dark {
     scrollbar-width: none;
   }
 }
+
+.title {
+  font-family: Merriweather, sans-serif;
+}

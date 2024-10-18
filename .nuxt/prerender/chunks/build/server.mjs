@@ -853,18 +853,18 @@ const _routes = [
   {
     name: "destinations-id",
     path: "/destinations/:id()",
-    component: () => import('./_id_-D1_04VT5.mjs')
+    component: () => import('./_id_-BYsNhara.mjs')
   },
   {
     name: "destinations",
     path: "/destinations",
     meta: __nuxt_page_meta || {},
-    component: () => import('./index-DsCr48yF.mjs')
+    component: () => import('./index-CZY_35si.mjs')
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-CD9thUSA.mjs')
+    component: () => import('./index-C7J48EWw.mjs')
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1653,11 +1653,9 @@ const plugin = /* @__PURE__ */ defineNuxtPlugin({
     };
   }
 });
-const LazyHomeCards = defineAsyncComponent(() => import('./HomeCards-8oH3S-UW.mjs').then((r) => r["default"] || r.default || r));
 const LazyIcon = defineAsyncComponent(() => import('./Icon-DfwXLsqh.mjs').then((r) => r["default"] || r.default || r));
 const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-DAGKEdSo.mjs').then((r) => r["default"] || r.default || r));
 const lazyGlobalComponents = [
-  ["HomeCards", LazyHomeCards],
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
 ];
@@ -6500,7 +6498,7 @@ const localeCodes = [];
 const localeLoaders = {};
 const vueI18nConfigs = [
   () => import(
-    './i18n.config-xZrhMitM.mjs'
+    './i18n.config-BcAom36j.mjs'
     /* webpackChunkName: "__i18n_config_ts_bffaebcb" */
   )
 ];
@@ -8274,7 +8272,7 @@ const __nuxt_component_0 = defineComponent({
   }
 });
 const layouts = {
-  default: () => import('./default-Bh_av_LZ.mjs'),
+  default: () => import('./default-t94Oktxt.mjs'),
   fullscreen: () => import('./fullscreen-xCoGyYH1.mjs')
 };
 const LayoutLoader = defineComponent({
